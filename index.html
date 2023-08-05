@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>🪙Desafio Conversor de modedas🪙</title>
+  </head>
+  <body>
+    <main>
+      <form id="formulario">
+        <div class="container">
+          <div class="Title"><span>Conversor de monedas Nacional</span></div>
+          <div class="main">
+          <div><span>Pesos CLP</span></div>
+          <input type="text" name="t_monto" id="t_monto" />
+          <div><span>Monedas a convertir</span></div>
+          <select name="moneda" id="select">
+            <option value="">Selecione Moneda</option>
+            <option value="uf">UF</option>
+            <option value="dolar">Dolar</option>
+            <option value="euro">Euro</option>
+          </select>
+          <div><button type="submit" id="b_buscar">Buscar</button></div>
+          <div><span id="t_valor"></span></div>
+        </div>
+      </div>
+      </form>
+      
+    </main>
+    <div id="graf">
+      <canvas id="grafico"></canvas>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
